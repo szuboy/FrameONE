@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="FrameONE" width=100%>
 </div>
 
-<h1 align="center" style="font-size: 32px; margin-bottom: 4px">FrameONE: ONE for Echocardiographic Keyframe Detection</h1>
+<h2 align="center" style="font-size: 36px ; margin-bottom: 4px">FrameONE: ONE for Echocardiographic Keyframe Detection</h1>
 
 <div align="center">
 
