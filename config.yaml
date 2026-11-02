@@ -1,0 +1,66 @@
+dataset:
+  json_path: ./data/annotations
+  data_root: ./data/videos
+  view_list: [A4C, A2C, PSAX, PLAX]
+  label_index_base: 0
+  resize: 128
+  fixed_length: 50
+  is_aug_spacing: true
+  aug_spacing_views: [PSAX]
+  min_spacing: 16
+  p_extra_downsample: 0.5
+  is_aug_image: true
+
+train:
+  pretrained_model: null
+  batch_size: 32
+  device: null
+  num_workers: 4
+  num_epochs: 100
+  use_amp: false
+  accumulation_steps: 2
+  seed: 42
+  val_period: 1
+  lr: 0.005
+  warmup: 5
+  val_full_label_dir: ./data/annotations/val_data_full_label
+  test_full_label_dir: ./data/annotations/test_data_full_label
+  val_full_label_files:
+    A2C: A2C_sample_val.json
+    PSAX: PSAX_sample_val.json
+    PLAX: PLAX_pred_sample_val.json
+    EchoDynamic: EchoDynamic_sample_val.json
+  test_full_label_files:
+    A2C: A2C_sample_test.json
+    PSAX: PSAX_sample_test.json
+    PLAX: PLAX_sample_test.json
+    EchoDynamic: EchoDynamic_sample_test.json
+
+loss_weight:
+  gaussian_sigma: 2.0
+
+test:
+  run_test: false
+  stride: 25
+  es_threshold: 0.5
+  ed_threshold: 0.5
+  gaussian_sigma: 2.0
+
+model:
+  in_channels: 3
+  feature_dim: 256
+  d_model: 256
+  nhead: 8
+  num_layers: 4
+  dim_feedforward: 1024
+  dropout: 0.1
+  view_loss_weight: 0.1
+  K_global: 4
+  K_local: 3
+  motion_recon_weight: 0.1
+  basis_ortho_weight: 0.01
+  motion_scales: [1, 2, 4, 8]
+
+output:
+  output_dir: ./outputs/frameone
+  result: ./outputs/frameone/results
