@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="FrameONE" width=100%>
 </div>
 
-<h1 align="center" style="font-size: 60px; margin-bottom: 4px">FrameONE: ONE for Echocardiographic Keyframe Detection</h1>
+<h1 align="center" style="font-size: 48px; margin-bottom: 4px">FrameONE: ONE for Echocardiographic Keyframe Detection</h1>
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 <a href="https://github.com/szuboy/FrameONE">
   <img src="https://img.shields.io/badge/GitHub-FrameONE-black?logo=github">
 </a>
-[![GitHub Repo stars](https://img.shields.io/github/stars/szuboy/FrameONE?style=social)](https://github.com/szuboy/FrameONE/stargazers) 
+[![GitHub Repo stars](https://img.shields.io/github/stars/szuboy/FrameONE.svg?style=social)](https://github.com/szuboy/FrameONE/stargazers) 
 <br/>  
 
 </div>
@@ -26,7 +26,7 @@ FrameONE enables accurate detection of end-systole (ES) and end-diastole (ED) fr
 Shenzhen University, CAIR-HKISI, Nanjing Medical University <br/>
 MICCAI 2026 <br/>
 <a href='https://drive.google.com/file/d/1GOI4WlMgG7l8x81nLEOoYNf_o2Usdcg1/view?usp=sharing'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='https://drive.google.com/file/d/1iDbnr6uDqZ06ePdwDJmntj9CmB4TcSHv/view?usp=sharing'><img src='https://img.shields.io/badge/Poster-PDF-blue'></a>
-<a href='https://papers.miccai.org/miccai-2026/0393-Paper3530.html'><img src='https://img.shields.io/badge/Conference-MICCAI_2026-orange'></a>
+<a href='https://papers.miccai.org/miccai-2026/0393-Paper3530.html'><img src='https://img.shields.io/badge/Access-MICCAI_2026-orange'></a>
 
 
 ## Setup
